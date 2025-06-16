@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
       onTap: () => Navigator.pushNamed(context, routeName),
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 10),
-        height: MediaQuery.of(context).size.height * 0.18,
+        height: MediaQuery.of(context).size.height * 0.15,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           color: color,
@@ -73,14 +73,14 @@ class HomePage extends StatelessWidget {
                 textAlign: TextAlign.start,
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 16,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               SizedBox(height: 8),
               Text(
                 content,
-                style: TextStyle(color: Colors.black, fontSize: 14),
+                style: TextStyle(color: Colors.black, fontSize: 16),
               ),
             ],
           ),
@@ -93,6 +93,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppBar(backgroundColor: Colors.white),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -128,7 +129,7 @@ class HomePage extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
-              SizedBox(height: 16),
+              //SizedBox(height: 16),
               SizedBox(height: 16),
               buildContainer(
                 context,
@@ -214,6 +215,10 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.transparent,
+        elevation: 0,
       ),
     );
   }
