@@ -1,0 +1,29 @@
+{
+    "targets": [
+        {
+            "id": "trash_bin",
+            "label": "Cop Kutusu",
+            "icon": "delete_outline"
+        },
+        {
+            "id": "door",
+            "label": "Kapi",
+            "icon": "door_front_door_outlined"
+        },
+        {
+            "id": "stairs",
+            "label": "Merdiven",
+            "icon": "stairs_outlined"
+        },
+        {
+            "id": "chair",
+            "label": "Sandalye",
+            "icon": "chair_outlined"
+        },
+        {
+            "id": "table",
+            "label": "Masa",
+            "icon": "table_restaurant_outlined"
+        }
+    ]
+}

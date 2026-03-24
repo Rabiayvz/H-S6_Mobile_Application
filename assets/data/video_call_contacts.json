@@ -1,0 +1,34 @@
+{
+    "contacts": [
+        {
+            "id": "1",
+            "name": "Ayse Yilmaz",
+            "avatarUrl": "https://picsum.photos/seed/ayse/400/400",
+            "isOnline": true
+        },
+        {
+            "id": "2",
+            "name": "Mehmet Demir",
+            "avatarUrl": "https://picsum.photos/seed/mehmet/400/400",
+            "isOnline": false
+        },
+        {
+            "id": "3",
+            "name": "Elif Kaya",
+            "avatarUrl": "https://picsum.photos/seed/elif/400/400",
+            "isOnline": true
+        },
+        {
+            "id": "4",
+            "name": "Can Arslan",
+            "avatarUrl": "https://picsum.photos/seed/can/400/400",
+            "isOnline": true
+        },
+        {
+            "id": "5",
+            "name": "Zeynep Ak",
+            "avatarUrl": "https://picsum.photos/seed/zeynep/400/400",
+            "isOnline": false
+        }
+    ]
+}

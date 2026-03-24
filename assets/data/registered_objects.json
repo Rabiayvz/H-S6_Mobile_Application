@@ -1,0 +1,40 @@
+{
+    "objects": [
+        {
+            "id": "1",
+            "name": "Bastonum",
+            "category": "Aksesuar",
+            "imageUrl": "https://picsum.photos/seed/bastonum/600/400"
+        },
+        {
+            "id": "2",
+            "name": "Montum",
+            "category": "Giyim",
+            "imageUrl": "https://picsum.photos/seed/montum/600/400"
+        },
+        {
+            "id": "3",
+            "name": "Cuzdanim",
+            "category": "Kisisel",
+            "imageUrl": "https://picsum.photos/seed/cuzdanim/600/400"
+        },
+        {
+            "id": "4",
+            "name": "Anahtarim",
+            "category": "Kisisel",
+            "imageUrl": "https://picsum.photos/seed/anahtarim/600/400"
+        },
+        {
+            "id": "5",
+            "name": "Kulakligim",
+            "category": "Elektronik",
+            "imageUrl": "https://picsum.photos/seed/kulakligim/600/400"
+        },
+        {
+            "id": "6",
+            "name": "Ilac Kutum",
+            "category": "Saglik",
+            "imageUrl": "https://picsum.photos/seed/ilackutum/600/400"
+        }
+    ]
+}

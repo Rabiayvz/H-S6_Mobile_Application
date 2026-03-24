@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Page1 extends StatefulWidget {
+import '../../../../core/widgets/shared_bottom_bar.dart';
+
+class ObstacleDetectionPage extends StatefulWidget {
+  const ObstacleDetectionPage({super.key});
+
   @override
-  _Page1State createState() => _Page1State();
+  State<ObstacleDetectionPage> createState() => _ObstacleDetectionPageState();
 }
 
-class _Page1State extends State<Page1> {
+class _ObstacleDetectionPageState extends State<ObstacleDetectionPage> {
   bool isCameraOn = false;
   bool isSoundOn = true;
 
@@ -13,11 +17,11 @@ class _Page1State extends State<Page1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Engelleri Tespit Et"),
+        title: const Text('Engelleri Tespit Et'),
         backgroundColor: Colors.white,
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -27,7 +31,7 @@ class _Page1State extends State<Page1> {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.all(12),
+              padding: const EdgeInsets.all(12),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.grey,
@@ -37,16 +41,13 @@ class _Page1State extends State<Page1> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 16.0,
-                vertical: 8,
-              ),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Kamera: ${isCameraOn ? "Açık" : "Kapalı"}',
-                    style: TextStyle(
+                    'Kamera: ${isCameraOn ? 'Acik' : 'Kapali'}',
+                    style: const TextStyle(
                       color: Colors.black,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -59,7 +60,7 @@ class _Page1State extends State<Page1> {
                         isCameraOn = value;
                       });
                     },
-                    activeColor: Colors.green,
+                    activeThumbColor: Colors.green,
                     inactiveThumbColor: Colors.white,
                     inactiveTrackColor: Colors.red,
                   ),
@@ -67,16 +68,13 @@ class _Page1State extends State<Page1> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 16.0,
-                vertical: 8,
-              ),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Sesli Bildirim: ${isSoundOn ? "Açık" : "Kapalı"}',
-                    style: TextStyle(
+                    'Sesli Bildirim: ${isSoundOn ? 'Acik' : 'Kapali'}',
+                    style: const TextStyle(
                       color: Colors.black,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -89,7 +87,7 @@ class _Page1State extends State<Page1> {
                         isSoundOn = value;
                       });
                     },
-                    activeColor: Colors.green,
+                    activeThumbColor: Colors.green,
                     inactiveThumbColor: Colors.white,
                     inactiveTrackColor: Colors.red,
                   ),
@@ -99,6 +97,7 @@ class _Page1State extends State<Page1> {
           ],
         ),
       ),
+      bottomNavigationBar: const SharedBottomBar(currentIndex: 1),
     );
   }
 }
